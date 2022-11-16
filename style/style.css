@@ -1,0 +1,37 @@
+:root {
+    /*Colors*/
+    --main-bg-color-1:#10151C;
+    --main-bg-color-2:#FFFFFF;
+    --buttons-bg-color:#FA0369;
+    --main-text-color:#FFFFFF;
+    --common-text-color: #7E8597;
+
+    /*Fonts*/
+    font-size: 62.5%; /*от чего?*/
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;   
+}
+
+html {
+    background-color: var(--main-bg-color-1);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+.whiteP, h2 {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 3.2rem;
+}
