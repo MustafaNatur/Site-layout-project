@@ -80,7 +80,7 @@ li { /* Убираем маркеры списка визуально*/
     text-align: left;
     font-weight: 400;   
     font-size: 1.6rem;
-    line-height: 20.83px;
+    line-height: 2.1rem;
     color: var(--main-text-color)
 }
 
@@ -93,7 +93,7 @@ li { /* Убираем маркеры списка визуально*/
     text-align: left;
     font-weight: 400;   
     font-size: 1.2rem;
-    line-height: 21.6px;
+    line-height: 2.2rem;
     color: rgba(26, 26, 26, 0.56)
 }
 
