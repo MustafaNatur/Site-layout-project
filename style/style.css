@@ -22,7 +22,7 @@ p {
     text-align: left;
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
 
 html {
@@ -107,5 +107,59 @@ li { /* Убираем маркеры списка визуально*/
 .step_P {
     font-size: 1.4rem;
     line-height: 1.8rem;
+    color: var(--main-text-color);
+}
+
+.comment_under_button_P {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;   
+}
+
+.pink_P {
+    color: var(--buttons-bg-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.under_icon_P {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-align: left;
+}
+
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--buttons-bg-color);
+    border-radius: 100px;
+    border:none;
+    width: 327px;
+    height: 50px;
+
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     color: var(--main-text-color)
+}
+
+.chat_button {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;  
+    color: var(--main-text-color);
+
+    border-radius: 100px;
+    border:none;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 113px;
+    height: 38px;
 }
