@@ -4,6 +4,7 @@
   --main-bg-color-2: #ffffff;
   --buttons-bg-color: #fa0369;
   --main-text-color: #ffffff;
+  --footer-bg-color: #f9f9fb;
   --common-text-color: #7e8597;
   --rare-text-color: #1a1a1a;
   --color-footer-button: rgba(255, 255, 255, 0.1);
@@ -159,4 +160,12 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   width: 113px;
   height: 38px;
+}
+
+.whiteSection {
+  background-color: var(--main-bg-color-2);
+}
+
+.greyBG {
+  background-color: var(--footer-bg-color);
 }
