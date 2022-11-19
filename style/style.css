@@ -1,165 +1,162 @@
 :root {
-    /*Colors*/
-    --main-bg-color-1:#10151C;
-    --main-bg-color-2:#FFFFFF;
-    --buttons-bg-color:#FA0369;
-    --main-text-color:#FFFFFF;
-    --common-text-color: #7E8597;
-    --rare-text-color: #1a1a1a;
+  /*Colors*/
+  --main-bg-color-1: #10151c;
+  --main-bg-color-2: #ffffff;
+  --buttons-bg-color: #fa0369;
+  --main-text-color: #ffffff;
+  --common-text-color: #7e8597;
+  --rare-text-color: #1a1a1a;
+  --color-footer-button: rgba(255, 255, 255, 0.1);
 
-    /*Fonts*/
-    font-size: 62.5%; /*от чего?*/
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;   
+  /*Fonts*/
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
 
 p {
-    color: var(--common-text-color);
-    text-align: center;
+  color: var(--common-text-color);
+  text-align: center;
 }
 
 .leftP {
-    text-align: left;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 html {
-    background-color: var(--main-bg-color-1);
+  background-color: var(--main-bg-color-1);
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-
-.whiteP, h2{
-    color: var(--main-text-color);
-    text-align: center;
-    font-size: 3.2rem;
+.whiteP,
+h2 {
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 3.2rem;
 }
 
 h3 {
-    color: var(--main-text-color);
-    font-size: 2.4rem;
+  color: var(--main-text-color);
+  font-size: 2.4rem;
 }
-
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
-.imgStack{
-    text-align: center;
+.imgStack {
+  text-align: center;
 }
 
-ul { /*Для того чтобы маркеры в списке исчезли фактически*/
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+ul {
+  /*Для того чтобы маркеры в списке исчезли фактически*/
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
-li { /* Убираем маркеры списка визуально*/
-    list-style-type: none; /* Убираем маркеры */
+li {
+  /* Убираем маркеры списка визуально*/
+  list-style-type: none; /* Убираем маркеры */
 }
 
 .left_P_Type_2 {
-    text-align: left;
-    font-weight: 400;   
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-    color: var(--main-text-color)
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: var(--main-text-color);
 }
 
 .h2_black {
-    color: var(--rare-text-color)
+  color: var(--rare-text-color);
 }
-
 
 .left_P_Type_3 {
-    text-align: left;
-    font-weight: 400;   
-    font-size: 1.2rem;
-    line-height: 2.2rem;
-    color: rgba(26, 26, 26, 0.56)
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: rgba(26, 26, 26, 0.56);
 }
 
-
 .center_small_P {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    font-weight: 400;   
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 400;
 }
 
 .step_P {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--main-text-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-text-color);
 }
 
 .comment_under_button_P {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    font-weight: 400;   
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 400;
 }
 
 .pink_P {
-    color: var(--buttons-bg-color);
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 2.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
+  color: var(--buttons-bg-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 .under_icon_P {
-    color: var(--main-text-color);
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    text-align: left;
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-align: left;
 }
 
 .button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-color: var(--buttons-bg-color);
-    border-radius: 100px;
-    border:none;
-    width: 327px;
-    height: 50px;
+  background-color: var(--buttons-bg-color);
+  border-radius: 100px;
+  border: none;
+  width: 327px;
+  height: 50px;
 
-
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--main-text-color)
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-text-color);
 }
 
 .chat_button {
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.8rem;  
-    color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-text-color);
 
-    border-radius: 100px;
-    border:none;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 113px;
-    height: 38px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 113px;
+  height: 38px;
 }
