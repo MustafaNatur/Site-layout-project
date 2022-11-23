@@ -49,6 +49,8 @@ h2 {
   color: var(--main-text-color);
   text-align: center;
   font-size: 3.2rem;
+
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -113,6 +115,7 @@ li {
   font-size: 1.2rem;
   line-height: 1.6rem;
   font-weight: 400;
+  margin-top: 5px;
 }
 
 .pink_P {
@@ -140,8 +143,11 @@ li {
   background-color: var(--buttons-bg-color);
   border-radius: 100px;
   border: none;
-  width: 327px;
-  height: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  max-width: 342px;
+  display: block;
 
   font-weight: 500;
   font-size: 1.4rem;
@@ -177,4 +183,14 @@ li {
 
 .greyBG {
   background-color: var(--footer-bg-color);
+}
+
+.babySection {
+  margin-top: 80px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.endBabySection {
+  margin-top: 40px;
 }
