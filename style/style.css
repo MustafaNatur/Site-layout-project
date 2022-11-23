@@ -160,6 +160,15 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   width: 113px;
   height: 38px;
+
+  float: right;
+  margin-top: 18px;
+  margin-right: 24px;
+}
+
+.headerImage {
+  margin-top: 13px;
+  margin-left: 18px;
 }
 
 .whiteSection {
