@@ -26,9 +26,15 @@ p {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
-
-html {
+header {
   background-color: var(--main-bg-color-1);
+}
+
+.blackSection {
+  background-color: var(--main-bg-color-1);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 108px;
 }
 
 .visually-hidden {
@@ -42,6 +48,23 @@ html {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+div {
+  margin-top: 80px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 64px;
+  padding-bottom: 82px;
+  background-color: var(--main-bg-color-1);
+  border-radius: 25px;
+}
+
+.leftH2 {
+  text-align: left;
+  margin-block-start: 0;
 }
 
 .whiteP,
@@ -66,6 +89,7 @@ h3 {
 
 .imgStack {
   text-align: center;
+  margin-top: 80px;
 }
 
 ul {
@@ -85,6 +109,9 @@ li {
   font-size: 1.6rem;
   line-height: 2.1rem;
   color: var(--main-text-color);
+  padding-bottom: 40px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 .h2_black {
@@ -181,16 +208,31 @@ li {
   background-color: var(--main-bg-color-2);
 }
 
+.whiteSection-2 {
+  margin-top: 80px;
+  padding-top: 81px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 80px;
+}
+
 .greyBG {
   background-color: var(--footer-bg-color);
 }
 
 .babySection {
-  margin-top: 80px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 80px;
 }
 
 .endBabySection {
   margin-top: 40px;
+}
+
+.paddingP {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-top: 34px;
+  margin-block-end: 0px;
 }
