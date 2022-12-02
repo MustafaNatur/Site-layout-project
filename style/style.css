@@ -293,4 +293,5 @@ ul .button {
   row-gap: 15px;
   align-items: center;
   align-content: center;
+  justify-content: center;
 }
