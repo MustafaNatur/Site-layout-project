@@ -233,9 +233,6 @@ li {
   padding-bottom: 80px;
 }
 
-.greyBG {
-  background-color: var(--footer-bg-color);
-}
 
 .babySection {
   padding-top: 80px;
@@ -294,4 +291,24 @@ ul .button {
   align-items: center;
   align-content: center;
   justify-content: center;
+  column-gap: 23px;
 }
+
+.footerIcons {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px 32px;
+  margin-left: 15px;
+}
+
+.greyBG {
+  background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 38px 24px 38px;
+  border: solid;
+  border-width:1px;
+  border-color: #1a1a1a;
+}
+
