@@ -96,7 +96,6 @@ h3 {
 }
 
 .imgStack {
-  text-align: center;
   margin-top: 80px;
 }
 
@@ -281,4 +280,17 @@ ul .button {
 
 .imgLiMarginTop {
   margin-top: 45px;
+}
+
+.liEndBlock {
+  margin-bottom: 80px;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  align-items: center;
+  align-content: center;
 }
