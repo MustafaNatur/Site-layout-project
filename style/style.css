@@ -233,7 +233,6 @@ li {
   padding-bottom: 80px;
 }
 
-
 .babySection {
   padding-top: 80px;
 }
@@ -284,7 +283,7 @@ ul .button {
 }
 
 .container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 15px;
@@ -296,7 +295,7 @@ ul .button {
 
 .footerIcons {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px 32px;
   margin-left: 15px;
 }
@@ -308,7 +307,7 @@ ul .button {
   align-items: center;
   padding: 24px 38px 24px 38px;
   border: solid;
-  border-width:1px;
+  border-width: 1px;
   border-color: #1a1a1a;
 }
 
@@ -323,6 +322,4 @@ ul .button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
-
