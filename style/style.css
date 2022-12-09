@@ -278,7 +278,6 @@ li {
 
 .liBlock {
   text-align: center;
-  margin-bottom: 30px;
   background-color: var(--li-block-color);
   border-radius: 24px;
   min-height: 262px;
@@ -286,6 +285,7 @@ li {
   margin-right: auto;
   max-width: 327px;
   padding: 40px;
+  width: 100%;
 }
 
 .liImg {
@@ -305,10 +305,6 @@ ul .button {
   margin-top: 45px;
 }
 
-.liEndBlock {
-  margin-bottom: 80px;
-}
-
 .container {
   display: flex;
   flex-direction: row;
@@ -316,7 +312,8 @@ ul .button {
   row-gap: 15px;
   align-items: center;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  row-gap: 25px;
   column-gap: 23px;
 }
 
@@ -371,6 +368,12 @@ ul .button {
   display: none;
 }
 
+.container3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-bottom: 80px;
+}
 @media screen and (min-width: 1200px) {
   .isHiden {
     display: block;
@@ -381,7 +384,7 @@ ul .button {
   .becomeFlex {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 50px;
   }
 
   .whitePmain {
@@ -394,7 +397,8 @@ ul .button {
   .leftButton {
     font-size: 1.8rem;
     line-height: 1.8rem;
-    margin: 0px;
+    margin-left: 0px;
+    margin-top: 48px;
   }
 
   .comment_under_button_P {
@@ -407,8 +411,8 @@ ul .button {
   }
 
   .blackSection {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   .headerImage {
@@ -437,5 +441,79 @@ ul .button {
   .changeSizeImage {
     width: 209px;
     height: 40px;
+  }
+
+  .whiteP,
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  .container3 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    margin-bottom: 180px;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .pink_P {
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+
+  .container4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 128px;
+    margin-bottom: 90px;
+  }
+
+  .container5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 128px;
+    margin-bottom: 90px;
+  }
+
+  .leftP {
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  ul .button {
+    margin-top: 48px;
+  }
+
+  .whiteSection {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .whiteSection-2 {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  /* .absolute {
+    position: absolute;
+    left: 800px;
+  } */
+
+  .h2_black {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .paddingP {
+    padding-top: 0px;
+    line-height: 3.2rem;
+    font-size: 2.1rem;
   }
 }
