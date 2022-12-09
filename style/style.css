@@ -317,7 +317,7 @@ ul .button {
   column-gap: 23px;
 }
 
-.flex .footerIcons {
+.footerIcons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px 32px;
@@ -346,6 +346,7 @@ ul .button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 400px;
 }
 
 .isHiden {
@@ -384,7 +385,7 @@ ul .button {
   .becomeFlex {
     display: flex;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 70px;
   }
 
   .whitePmain {
@@ -515,5 +516,17 @@ ul .button {
     padding-top: 0px;
     line-height: 3.2rem;
     font-size: 2.1rem;
+  }
+
+  .greyBG {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+
+  .footerIcons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .comment_under_button_P {
+    margin-top: 10px;
   }
 }
