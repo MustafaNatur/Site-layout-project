@@ -9,6 +9,7 @@
   --rare-text-color: #1a1a1a;
   --li-block-color: #141a25;
   --color-footer-button: rgba(255, 255, 255, 0.1);
+  --max-width: 1400px;
 
   /*Fonts*/
   font-size: 62.5%;
@@ -69,6 +70,9 @@ header {
   padding-bottom: 82px;
   background-color: var(--main-bg-color-1);
   border-radius: 25px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .leftH2 {
@@ -315,6 +319,9 @@ ul .button {
   justify-content: center;
   row-gap: 25px;
   column-gap: 23px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footerIcons {
@@ -333,12 +340,15 @@ ul .button {
   border: solid;
   border-width: 1px;
   border-color: #1a1a1a;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container2 {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  max-width: var(--max-width);
 }
 
 .container1 {
@@ -347,6 +357,7 @@ ul .button {
   flex-direction: row;
   justify-content: space-between;
   max-width: 400px;
+
 }
 
 .isHiden {
@@ -369,13 +380,39 @@ ul .button {
   display: none;
 }
 
+.endDiv {
+  display: flex;
+  flex-flow: row nowrap ;
+  align-items: stretch;
+  position: relative;
+  max-width: 1146px;
+  margin-top: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.endDivLeft {
+  max-width: 363px;
+  margin-left: 20px;
+}
+
+.phoneImage {
+  min-width: 354px;
+  min-height: 584px;
+  bottom: 0;
+  right: 6%;
+}
+
 .container3 {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
   margin-bottom: 80px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .isHiden {
     display: block;
   }
@@ -386,6 +423,9 @@ ul .button {
     display: flex;
     align-items: center;
     column-gap: 70px;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .whitePmain {
@@ -454,6 +494,9 @@ ul .button {
     flex-direction: row;
     column-gap: 40px;
     margin-bottom: 180px;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container {
@@ -471,6 +514,9 @@ ul .button {
     align-items: center;
     column-gap: 128px;
     margin-bottom: 90px;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container5 {
@@ -479,6 +525,9 @@ ul .button {
     align-items: center;
     column-gap: 128px;
     margin-bottom: 90px;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .leftP {
@@ -502,10 +551,12 @@ ul .button {
     padding-left: 130px;
     padding-right: 130px;
   }
-  /* .absolute {
+
+   .absolute {
     position: absolute;
-    left: 800px;
-  } */
+  } 
+
+
 
   .h2_black {
     text-align: left;
@@ -528,5 +579,15 @@ ul .button {
   }
   .comment_under_button_P {
     margin-top: 10px;
+  }
+
+  .endDivLeft {
+    max-width: 363px;
+    margin-left: 4%;
+  }
+
+  .endDiv {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
