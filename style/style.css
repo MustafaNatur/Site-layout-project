@@ -46,7 +46,7 @@ header {
   padding-bottom: 108px;
 }
 
-.visually-hidden {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -78,6 +78,13 @@ header {
 
 .whiteP,
 h2 {
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+}
+
+.whitePmain {
   color: var(--main-text-color);
   text-align: center;
   font-size: 3.2rem;
@@ -197,6 +204,26 @@ li {
   color: var(--main-text-color);
 }
 
+.leftButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--buttons-bg-color);
+  border-radius: 100px;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  max-width: 342px;
+  display: block;
+
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--main-text-color);
+}
+
 .chat_button {
   font-weight: 500;
   font-size: 1.4rem;
@@ -215,6 +242,7 @@ li {
 }
 
 .headerImage {
+  display: inline;
   margin-top: 13px;
   margin-left: 18px;
 }
@@ -288,11 +316,11 @@ ul .button {
   row-gap: 15px;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 23px;
 }
 
-.footerIcons {
+.flex .footerIcons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px 32px;
@@ -321,4 +349,93 @@ ul .button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.isHiden {
+  display: none;
+}
+
+.isHiden2 {
+  display: block;
+}
+
+.becomeFlex {
+  display: block;
+}
+
+.settingsAfterMedia {
+  text-align: center;
+}
+
+.newHeaderImage {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .isHiden {
+    display: block;
+  }
+  .isHiden2 {
+    display: none;
+  }
+  .becomeFlex {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .whitePmain {
+    color: var(--main-text-color);
+    text-align: left;
+    font-size: 4.8rem;
+    margin-bottom: 40px;
+  }
+
+  .leftButton {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin: 0px;
+  }
+
+  .comment_under_button_P {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .blackSection {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .headerImage {
+    margin-left: 140px;
+  }
+
+  .chat_button {
+    margin-right: 140px;
+    margin-top: 47px;
+    font-size: 1.6rem;
+    width: 122px;
+    height: 41px;
+  }
+
+  .headerImage {
+    display: none;
+    margin-top: 40px;
+  }
+
+  .newHeaderImage {
+    display: inline;
+    margin-top: 30px;
+    margin-left: 140px;
+  }
+
+  .changeSizeImage {
+    width: 209px;
+    height: 40px;
+  }
 }
