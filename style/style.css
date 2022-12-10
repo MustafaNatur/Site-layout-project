@@ -357,7 +357,6 @@ ul .button {
   flex-direction: row;
   justify-content: space-between;
   max-width: 400px;
-
 }
 
 .isHiden {
@@ -382,7 +381,7 @@ ul .button {
 
 .endDiv {
   display: flex;
-  flex-flow: row nowrap ;
+  flex-flow: row nowrap;
   align-items: stretch;
   position: relative;
   max-width: 1146px;
@@ -391,16 +390,11 @@ ul .button {
   margin-right: 20px;
 }
 
-.endDivLeft {
-  max-width: 363px;
-  margin-left: 20px;
-}
-
 .phoneImage {
   min-width: 354px;
   min-height: 584px;
   bottom: 0;
-  right: 6%;
+  right: 10%;
 }
 
 .container3 {
@@ -481,7 +475,7 @@ ul .button {
 
   .changeSizeImage {
     width: 209px;
-    height: 40px;
+    height: 30px;
   }
 
   .whiteP,
@@ -552,11 +546,9 @@ ul .button {
     padding-right: 130px;
   }
 
-   .absolute {
+  .absolute {
     position: absolute;
-  } 
-
-
+  }
 
   .h2_black {
     text-align: left;
@@ -583,7 +575,7 @@ ul .button {
 
   .endDivLeft {
     max-width: 363px;
-    margin-left: 4%;
+    margin-left: 10%;
   }
 
   .endDiv {
