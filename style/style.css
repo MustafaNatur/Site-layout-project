@@ -206,6 +206,17 @@ li {
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: var(--main-text-color);
+  box-shadow: 25px 15px 13px rgba(244, 98, 229, 0.7);
+  transition: all 0.5s ease-out;
+}
+
+.button:hover {
+  transition: all 0.5s ease-out;
+  background-color: var(--main-bg-color-2);
+  color: var(--buttons-bg-color);
+  transform: scale(1.1, 1.1);
+
+  box-shadow: 50px 30px 35px rgba(244, 98, 229, 0.5);
 }
 
 .leftButton {
