@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
 }
+
 p {
   color: var(--common-text-color);
   text-align: center;
@@ -89,7 +90,10 @@ h2 {
 }
 
 .whitePmain {
-  color: var(--main-text-color);
+  background-image: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   text-align: center;
   font-size: 3.2rem;
   margin-bottom: 40px;
