@@ -1,82 +1,87 @@
-html, body { height: 100%;}
+html,
+body {
+  height: 100%;
+}
 
 body > footer {
   position: sticky;
   top: 100vh;
 }
 
-  .allBlack {
-    background-color: var(--main-bg-color-1);
+.allBlack {
+  background-color: var(--main-bg-color-1);
+}
+
+.form {
+  width: 450px;
+  margin: auto;
+  margin-top: 6%;
+}
+.buttonMargin {
+  margin-top: 10%;
+}
+
+.input-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.input-label {
+  margin-top: 25px;
+}
+
+.input-title {
+  margin-right: 35px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.input {
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+}
+
+.input:focus {
+  border-color: var(--buttons-bg-color);
+  outline: none;
+}
+
+.input,
+.button {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 60px;
   }
 
   .form {
-    width: 450px;
-    margin: auto;
-    margin-top: 10%;
-  }
-  .buttonMargin {
-    margin-top:10%;
+    width: 100%;
   }
 
   .input-label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #ffffff;
-  }
-
-  .input-label {
-    margin-top: 25px;
+    display: block;
   }
 
   .input-title {
-    margin-right: 35px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1;
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
-  .input {
-    border: 1px solid #ffffff;
-    border-radius: 6px;
-    padding: 10px 15px;
-    background-color: transparent;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 300;
+  .input,
+  .button {
+    width: 100%;
   }
-
-  .input:focus {
-    border-color: var(--buttons-bg-color);
-    outline: none;
-  }
-
-  .input, .button {
-    width: 300px;
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 768px) {
-    .form {
-      padding: 60px;
-    }
-
-    .form {
-      width: 100%;
-    }
-
-    .input-label {
-      display: block;
-    }
-
-    .input-title {
-      display: block;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-
-    .input, .button {
-      width: 100%;
-    }
-  }
+}
