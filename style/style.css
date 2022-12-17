@@ -539,6 +539,11 @@ ul .button {
     margin-right: auto;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+
   .leftP {
     font-size: 2.1rem;
     line-height: 3.2rem;
