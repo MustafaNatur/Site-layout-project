@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,74 +16,110 @@
     <link rel="stylesheet" href="style/footerStyle.css" />
 
     <title>Form</title>
-</head>
-<body class="allBlack">
+  </head>
+  <body class="allBlack">
     <header>
-        <a href="index.html">
-          <img
-            class="headerImage"
-            src="images/vector/logo1.svg"
-            alt="На главную"
-          />
-          <img
-            class="newHeaderImage"
-            src="images/vector/logo1.svg"
-            alt="На главную"
-            width="233"
-          />
-        </a>
-        <button class="chat_button"><a href="form.html">Let's chat</a></button>
-      </header>
+      <a href="index.html">
+        <img
+          class="headerImage"
+          src="images/vector/logo1.svg"
+          alt="На главную"
+        />
+        <img
+          class="newHeaderImage"
+          src="images/vector/logo1.svg"
+          alt="На главную"
+          width="233"
+        />
+      </a>
+      <button class="chat_button"><a href="form.html">Let's chat</a></button>
+    </header>
     <main>
-        <form class="form" action="mailto:html@yandex.ru" enctype="text/plain">
-            <label class="input-label"><span class="input-title">Name</span>
-              <input class="input" type="text" name="name" required>
-            </label>
-            <label class="input-label"><span class="input-title">Password</span>
-              <input class="input" type="password" name="order" required>
-            </label>
-            <label class="input-label"><span class="input-title" pattern="2[0-9]{3}-[0-9]{3}">Number</span>
-                <input class="input" type="tel" name="order" required>
-            </label>
-            <button class="button leftBtton buttonMargin"  type="submit">Send</button>
-          </form>
+      <form class="form" name="contact" method="POST" data-netlify="true">
+        <label class="input-label"
+          ><span class="input-title">Name</span>
+          <input class="input" type="text" name="name" required />
+        </label>
+        <label class="input-label"
+          ><span class="input-title">Password</span>
+          <input class="input" type="password" name="order" required />
+        </label>
+        <label class="input-label"
+          ><span class="input-title" pattern="2[0-9]{3}-[0-9]{3}">Number</span>
+          <input class="input" type="tel" name="order" required />
+        </label>
+
+        <label class="input-label"
+          ><span class="input-title">Gender</span>
+          <label>Male</label>
+          <input type="radio" name="gender" value="Male" />
+          <label>Female</label>
+          <input type="radio" name="gender" value="Female" />
+        </label>
+
+        <label class="input-label"
+          ><span class="input-title">Gender</span>
+          <label>Morning</label>
+          <input type="radio" name="gender" value="Morning" />
+          <label>Day</label>
+          <input type="radio" name="gender" value="Day" />
+          <label>Night</label>
+          <input type="radio" name="gender" value="Day" />
+        </label>
+
+        <label class="input-label">
+          <span class="input-title">Date</span>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01"
+            max="2018-12-31"
+          />
+        </label>
+
+        <button class="button leftBtton buttonMargin" type="submit">
+          Send
+        </button>
+      </form>
     </main>
-</body>
-    <footer class="greyBG">
-        <div class="footerCp">
-          <p class="left_P_Type_3">© 2020 Inc.</p>
-          <p class="left_P_Type_3">All rights reserved</p>
-        </div>
-  
-        <div class="footerIcons">
-          <a href="#"
-            ><img
-              src="images/Social Icons/logo-facebook.svg"
-              alt="FaceBook"
-              width="20"
-              height="20"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/Social Icons/logo-twitter.svg"
-              alt="Twitter"
-              width="20"
-              height="20"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/Social Icons/logo-instagram.svg"
-              alt="Instagram"
-              width="20"
-              height="20"
-          /></a>
-          <a href="#"
-            ><img
-              src="images/Social Icons/logo-github.svg"
-              alt="GitHub"
-              width="20"
-              height="20"
-          /></a>
-        </div>
-      </footer>
+  </body>
+  <footer class="greyBG">
+    <div class="footerCp">
+      <p class="left_P_Type_3">© 2020 Inc.</p>
+      <p class="left_P_Type_3">All rights reserved</p>
+    </div>
+
+    <div class="footerIcons">
+      <a href="#"
+        ><img
+          src="images/Social Icons/logo-facebook.svg"
+          alt="FaceBook"
+          width="20"
+          height="20"
+      /></a>
+      <a href="#"
+        ><img
+          src="images/Social Icons/logo-twitter.svg"
+          alt="Twitter"
+          width="20"
+          height="20"
+      /></a>
+      <a href="#"
+        ><img
+          src="images/Social Icons/logo-instagram.svg"
+          alt="Instagram"
+          width="20"
+          height="20"
+      /></a>
+      <a href="#"
+        ><img
+          src="images/Social Icons/logo-github.svg"
+          alt="GitHub"
+          width="20"
+          height="20"
+      /></a>
+    </div>
+  </footer>
 </html>
