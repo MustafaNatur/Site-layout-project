@@ -7,10 +7,6 @@ body > footer {
   position: sticky;
   top: 100vh;
 }
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(100, 100, 100);
-}
 
 .allBlack {
   background-color: var(--main-bg-color-1);

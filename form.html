@@ -35,7 +35,7 @@
       <button class="chat_button"><a href="form.html">Let's chat</a></button>
     </header>
     <main>
-      <form form name="contact" method="POST" data-netlify="true">
+      <form class="form" name="contact" method="POST" data-netlify="true">
         <label class="input-label"
           ><span class="input-title">Name</span>
           <input class="input" type="text" name="Name" required />
@@ -45,26 +45,12 @@
           <input class="input" type="password" name="Password" required />
         </label>
         <label class="input-label"
-          ><span class="input-title" pattern="2[0-9]{3}-[0-9]{3}"
-            >Telephone</span
-          >
-          <input
-            class="input"
-            placeholder="+X-XXX-XXX-XX-XX"
-            type="tel"
-            name="Phone number"
-            required
-          />
+          ><span class="input-title" pattern="2[0-9]{3}-[0-9]{3}">Number</span>
+          <input class="input" type="tel" name="Phone number" required />
         </label>
         <label class="input-label"
           ><span class="input-title">E-mail</span>
-          <input
-            class="input"
-            placeholder="example@email.r"
-            type="email"
-            name="E-mail"
-            required
-          />
+          <input class="input" type="email" name="E-mail" required />
         </label>
 
         <label class="input-label_type_2"
