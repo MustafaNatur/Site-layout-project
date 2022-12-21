@@ -369,6 +369,13 @@ ul .button {
   transform: translate(-50%, -50%);
 }
 
+.P {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: rgba(26, 26, 26, 0.56);
+}
+
 .container2 {
   display: flex;
   flex-direction: column;
