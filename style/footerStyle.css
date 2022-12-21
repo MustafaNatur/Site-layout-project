@@ -11,7 +11,15 @@ body > footer {
 .allBlack {
   background-color: var(--main-bg-color-1);
 }
-
+.greyBG_sticky {
+  background-color: var(--footer-bg-color);
+  border: solid;
+  border-width: 1px;
+  border-color: #1a1a1a;
+  padding: 24px 38px 24px 38px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .form {
   width: 450px;
   margin: auto;
