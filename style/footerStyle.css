@@ -32,6 +32,14 @@ body > footer {
   margin-top: 25px;
 }
 
+.input-label_type_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
 .input-title {
   margin-right: 35px;
   font-size: 24px;
