@@ -348,15 +348,25 @@ ul .button {
 
 .greyBG {
   background-color: var(--footer-bg-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 38px 24px 38px;
   border: solid;
   border-width: 1px;
   border-color: #1a1a1a;
+  padding: 24px 38px 24px 38px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flexPartGreyBG {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.relative {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container2 {
@@ -542,7 +552,6 @@ ul .button {
   a {
     text-decoration: none;
   }
-
 
   .leftP {
     font-size: 2.1rem;
