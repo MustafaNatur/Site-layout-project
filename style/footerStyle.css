@@ -16,6 +16,11 @@ body > footer {
   background: var(--buttons-bg-color);
 }
 
+.abs {
+  vertical-align: middle;
+  margin-left:15px;
+}
+
 .greyBG_sticky {
   background-color: var(--footer-bg-color);
   border: solid;
