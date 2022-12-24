@@ -77,7 +77,7 @@ body > footer {
   font-weight: 300;
 }
 
-.input:focus {
+:focus {
   border-color: var(--buttons-bg-color);
   outline: none;
 }
