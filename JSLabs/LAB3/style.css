@@ -1,0 +1,226 @@
+:root {
+    /*Colors*/
+    --main-bg-color-1: #10151c;
+    --main-bg-color-2: #ffffff;
+    --buttons-bg-color: #ffffff;
+    --main-text-color: #ffffff;
+    --footer-bg-color: #f9f9fb;
+    --common-text-color: #7e8597;
+    --rare-text-color: #1a1a1a;
+    --li-block-color: #141a25;
+    --color-footer-button: rgba(255, 255, 255, 0.1);
+    --max-width: 1400px;
+  
+    /*Fonts*/
+    font-size: 62.5%;
+    font-weight: 100;
+
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-image: url("img/main.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    transition: all 0.5s ease-out;
+}
+
+.chat_button {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--main-text-color);
+  
+    
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 113px;
+    height: 38px;
+  
+    float: right;
+    margin-top: 18px;
+    margin-right: 24px;
+  }
+
+  header {
+    height: 80px;
+  }
+.glass{
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 7px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.chat_button:hover {
+    transition: all 0.5s ease-out;
+    backdrop-filter: blur(3px);
+    color: var(--buttons-bg-color);
+    transform: scale(1.1, 1.1);
+  }
+
+ .cancleButton:hover {
+    background-color:rgb(54, 123, 222, 0.7);
+  }
+
+  .loginButton:hover {
+    background-color:rgb(54, 123, 222, 0.7);
+  }
+
+
+.glassMain {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.formBox{
+    display: none;
+    width: 500px;
+    height: 210px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    transition: all 0.5s ease-out;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+.allBlack {
+  background-color: var(--main-bg-color-1);
+}
+
+::selection {
+  background: var(--buttons-bg-color);
+}
+
+.abs {
+  vertical-align: middle;
+  margin-left:15px;
+}
+
+.greyBG_sticky {
+  background-color: var(--footer-bg-color);
+  border: solid;
+  border-width: 1px;
+  border-color: #1a1a1a;
+  padding: 24px 38px 24px 38px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form {
+  width: 450px;
+  margin: auto;
+  margin-top: 3%;
+}
+
+
+.input-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.input-label {
+  margin-top: 35px;
+}
+
+.input-label_type_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.input-title {
+  margin-right: 35px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.input {
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+}
+
+:focus {
+  border-color: var(--buttons-bg-color);
+  outline: none;
+}
+
+.input,
+.button {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.container {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+  .container .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.loginButton {
+    position:relative;
+    border: none;
+    height: 30px;
+    width:56px;
+    border-radius: 5px;
+    background-color:rgb(54, 123, 222, 1);
+    color: white;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.cancleButton {
+    position:relative;
+    border: none;
+    height: 30px;
+    width:56px;
+    border-radius: 5px;
+    background-color:rgb(54, 123, 222, 1);
+    color: white;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
