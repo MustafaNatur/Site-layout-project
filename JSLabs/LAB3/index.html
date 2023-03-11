@@ -42,13 +42,14 @@
               placeholder="Password"
               type="password"
               name="Password"
+              minlength="6"
               required
             />
           </label>
 
           <div class="container">
             <div class="btn-holder">
-              <button id="cancleButton" class="cancleButton">Cancle</button>
+              <button id="showButton" class="showButton">show</button>
               <button id="loginButton" class="loginButton">Login</button>
             </div>
           </div>
@@ -58,13 +59,13 @@
     <script>
       let modal = document.getElementById("formModal");
       let formCallerButton = document.getElementById("callerButton");
-      let cancleButton = document.getElementById("cancleButton");
+      let showButton = document.getElementById("showButton");
 
       formCallerButton.addEventListener("click", (event) => {
         modal.style.display = "block";
       });
 
-      cancleButton.addEventListener("click", (event) => {
+      showButton.addEventListener("click", (event) => {
         modal.style.display = "none";
       });
     </script>

@@ -74,7 +74,7 @@ button {
     transform: scale(1.1, 1.1);
   }
 
- .cancleButton:hover {
+ .showButton:hover {
     background-color:rgb(54, 123, 222, 0.7);
   }
 
@@ -94,7 +94,7 @@ button {
 .formBox{
     display: none;
     width: 500px;
-    height: 210px;
+    height: 225px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 10%;
@@ -208,11 +208,11 @@ body > footer {
     border-radius: 5px;
     background-color:rgb(54, 123, 222, 1);
     color: white;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-left: 16px;
 }
 
-.cancleButton {
+.showButton {
     position:relative;
     border: none;
     height: 30px;
@@ -220,7 +220,7 @@ body > footer {
     border-radius: 5px;
     background-color:rgb(54, 123, 222, 1);
     color: white;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-left: 16px;
 }
 
