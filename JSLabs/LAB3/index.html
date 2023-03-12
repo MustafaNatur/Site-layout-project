@@ -16,8 +16,6 @@
   </head>
 
   <body>
-    <script src="main.js"></script>
-
     <header>
       <button id="callerButton" class="chat_button glass">Form</button>
     </header>
@@ -56,18 +54,6 @@
         </form>
       </div>
     </main>
-    <script>
-      let modal = document.getElementById("formModal");
-      let formCallerButton = document.getElementById("callerButton");
-      let showButton = document.getElementById("showButton");
-
-      formCallerButton.addEventListener("click", (event) => {
-        modal.style.display = "block";
-      });
-
-      showButton.addEventListener("click", (event) => {
-        modal.style.display = "none";
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

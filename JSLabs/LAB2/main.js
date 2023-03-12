@@ -27,7 +27,7 @@
 //Задача №2 Абсолютное значение
 
 // function myAbs(x) {
-//     return x >= 0 ? x:-x
+//     return x >= 0 ? x : -x
 // }
 
 // console.log(myAbs(-5))
@@ -43,7 +43,7 @@
 //         console.log(`Студент ${this.name} ${this.last_name} учиться в группе ${this.group}`)
 //     }
 //     this.name = first_name
-//     this.last_name =last_name
+//     this.last_name = last_name
 //     this.group = group
 // }
 
