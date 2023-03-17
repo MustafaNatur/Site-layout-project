@@ -1,8 +1,8 @@
 let modal = document.getElementById("formModal");
 let formCallerButton = document.getElementById("callerButton");
 let showButton = document.getElementById("showButton");
+let inputPassword = document.getElementById("inputPassword")
 
-let body;
 
 formCallerButton.addEventListener("click", (event) => {
   modal.style.display = "block";
@@ -19,4 +19,12 @@ document.body.addEventListener("click", (event) => {
   ) {
     modal.style.display = "none";
   }
+});
+
+showButton.addEventListener("pointerdown", event => {
+  inputPassword.type = "text";
+});
+
+showButton.addEventListener("pointerup", event => {
+  inputPassword.type = "password";
 });
