@@ -6,6 +6,7 @@ let inputEmail = document.getElementById("inputMail");
 let emailError = document.getElementById("error")
 let errorText = document.getElementById("errorText");
 let mainDiv = document.getElementById("mainDiv");
+const sendButtton = document.getElementById("loginButton");
 
 
 formCallerButton.addEventListener("click", (event) => {
@@ -43,6 +44,16 @@ inputEmail.addEventListener("input", (event) => {
   } else {
     inputEmail.setCustomValidity("");
   }
+});
+
+sendButtton.addEventListener('click', (e) => {
+  // prevent the form from submitting
+  e.preventDefault();
+
+  // show the form values
+  const formData = new FormData(form);
+  const values = [...formData.entries()];
+  console.log(values);
 });
 
 
