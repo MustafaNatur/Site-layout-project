@@ -5,14 +5,15 @@ let inputPassword = document.getElementById("inputPassword");
 let inputEmail = document.getElementById("inputMail");
 let emailError = document.getElementById("error")
 let errorText = document.getElementById("errorText");
+let mainDiv = document.getElementById("mainDiv");
 
 
 formCallerButton.addEventListener("click", (event) => {
   clean();
-  modal.style.display = "block";
+  mainDiv.style.display = "block";
 });
 
-modal.addEventListener("click", (event) => {
+mainDiv.addEventListener("click", (event) => {
   event.stopPropagation();
 });
 
@@ -21,7 +22,7 @@ document.body.addEventListener("click", (event) => {
     event.target.nodeName != "BUTTON" &&
     event.target.id != "formModal"
   ) {
-    modal.style.display = "none";
+    mainDiv.style.display = "none";
   }
 });
 
@@ -36,9 +37,9 @@ showButton.addEventListener("pointerup", event => {
 
 inputEmail.addEventListener("input", (event) => {
   if (inputEmail.validity.typeMismatch) {
-    inputEmail.setCustomValidity("Email address is wrong");
+    inputEmail.setCustomValidity("Entered value needs to be an email address.");
   } else if (inputEmail.validity.valueMissing) {
-    inputEmail.setCustomValidity("You need to enter an email address");
+    inputEmail.setCustomValidity("You need to enter an email address.");
   } else {
     inputEmail.setCustomValidity("");
   }
@@ -58,11 +59,11 @@ inputEmail.addEventListener("input", (event) => {
   if (inputEmail.validity.valid) {
     // In case there is an error message visible, if the field
     // is valid, we remove the error message.
-    emailError.textContent = ""; // Reset the content of the message
-    emailError.style.display = "none"; // Reset the visual state of the message
+    //emailError.textContent = ""; // Reset the content of the message
+    emailError.className = "errorDivDisable"; // Reset the visual state of the message
   } else {
     // If there is still an error, show the correct error
-    emailError.style.display = "flex";
+    emailError.className = "errorDiv";
     showError();
   }
 });
@@ -85,5 +86,5 @@ function showError() {
 function clean() {
   inputEmail.value = "";
   inputPassword.value = "";
-  emailError.style.display = "none";
+  emailError.className = "errorDivDisable";
 }

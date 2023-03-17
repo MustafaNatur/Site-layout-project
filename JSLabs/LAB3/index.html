@@ -21,42 +21,56 @@
     </header>
 
     <main>
-      <div id="formModal" class="formBox glassMain">
-        <form class="form" name="contact" method="POST" data-netlify="true">
-          <label class="input-label"
-            ><span class="input-title">E-mail</span>
-            <input
-              id="inputMail"
-              class="input"
-              placeholder="E-mail"
-              type="email"
-              name="mail"
-              required
-            />
-          </label>
-          <div id="error" class="errorDiv">
-            <img src="img/error.svg" class="errorImage" width="20px" /><span
-              id="errorText"
-              >Error here</span
-            >
-          </div>
-          <label class="input-label"
-            ><span class="input-title">Password</span>
-            <input
-              id="inputPassword"
-              class="input"
-              placeholder="Password"
-              type="password"
-              name="Password"
-              minlength="6"
-              required
-            />
-          </label>
-        </form>
+      <div id="mainDiv" class="mainDiv">
+        <div id="formModal" class="formBox glassMain">
+          <form
+            id="form"
+            class="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <label class="input-label"
+              ><span class="input-title">E-mail</span>
+              <input
+                id="inputMail"
+                class="input inputMail"
+                placeholder="E-mail"
+                type="email"
+                name="mail"
+                required
+              />
+            </label>
+            <div id="error" class="errorDiv">
+              <img src="img/error.svg" class="errorImage" width="20px" /><span
+                id="errorText"
+                >Error here</span
+              >
+            </div>
+            <label class="input-label"
+              ><span class="input-title">Password</span>
+              <input
+                id="inputPassword"
+                class="input inputPassword"
+                placeholder="Password"
+                type="password"
+                name="Password"
+                minlength="6"
+                required
+              />
+            </label>
+          </form>
+        </div>
         <div class="container">
           <div class="btn-holder">
             <button id="showButton" class="showButton">show</button>
-            <button id="loginButton" class="loginButton">Login</button>
+            <input
+              type="submit"
+              form="form"
+              id="loginButton"
+              class="loginButton"
+              value="Login"
+            />
           </div>
         </div>
       </div>
