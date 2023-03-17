@@ -24,15 +24,22 @@
       <div id="formModal" class="formBox glassMain">
         <form class="form" name="contact" method="POST" data-netlify="true">
           <label class="input-label"
-            ><span class="input-title">Name</span>
+            ><span class="input-title">E-mail</span>
             <input
+              id="inputMail"
               class="input"
-              placeholder="Name"
-              type="text"
-              name="Name"
+              placeholder="E-mail"
+              type="email"
+              name="mail"
               required
             />
           </label>
+          <div id="error" class="errorDiv">
+            <img src="img/error.svg" class="errorImage" width="20px" /><span
+              id="errorText"
+              >Error here</span
+            >
+          </div>
           <label class="input-label"
             ><span class="input-title">Password</span>
             <input
@@ -45,14 +52,13 @@
               required
             />
           </label>
-
-          <div class="container">
-            <div class="btn-holder">
-              <button id="showButton" class="showButton">show</button>
-              <button id="loginButton" class="loginButton">Login</button>
-            </div>
-          </div>
         </form>
+        <div class="container">
+          <div class="btn-holder">
+            <button id="showButton" class="showButton">show</button>
+            <button id="loginButton" class="loginButton">Login</button>
+          </div>
+        </div>
       </div>
     </main>
     <script src="main.js"></script>

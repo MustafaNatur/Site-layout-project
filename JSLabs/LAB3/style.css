@@ -173,6 +173,7 @@ body > footer {
   font-family: inherit;
   font-size: inherit;
   font-weight: 300;
+  
 }
 
 :focus {
@@ -204,7 +205,7 @@ body > footer {
   border-radius: 5px;
   background-color: rgb(54, 123, 222, 1);
   color: white;
-  margin-top: 35px;
+  margin-top: 55px;
   margin-left: 16px;
 }
 
@@ -216,6 +217,29 @@ body > footer {
   border-radius: 5px;
   background-color: rgb(54, 123, 222, 1);
   color: white;
-  margin-top: 35px;
+  margin-top: 55px;
   margin-left: 16px;
+}
+
+input:focus {
+  border-color: rgb(37, 126, 251);
+ 
+}
+
+.errorDiv{
+  width: 95px;
+  height: 30px;
+  border: 2px solid #d60101;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(255, 0, 0, 0.3);
+  margin-left: 150px;
+  margin-top: 16px;
 }
