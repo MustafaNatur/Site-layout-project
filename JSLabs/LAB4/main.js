@@ -63,12 +63,13 @@ scene.add(directionalLight);
 
 scene.add(spotLight);
 
-  let cube = buildCube(0, 15, 0, 20, 20, 20);
+  let cube = buildCube(30, 15, -10, 20, 20, 20);
   cube.castShadow = true;
    scene.add(cube);
    buildPlane(0, 0, 0, 150, 100, -Math.PI/2, 0, 0);
    //buildPlane(0, 30, -50, 150, 60, 0, 0, 0);
    BufferGeometryPlane(150, 60, 0, 30, -50);
+   BufferGeometryTriangularPyramid(10, -35, 15, -10);
    animate();
 
 let result = document.querySelector('#result');
@@ -103,13 +104,47 @@ const vertices = new Float32Array( [
 
 // itemSize = 3 because there are 3 values (components) per vertex
 geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );
-const material = new THREE.MeshLambertMaterial({ color: 0xffffff});
+geometry.computeVertexNormals();
+const material = new THREE.MeshLambertMaterial({ color: 0xffffff    });
 const mesh = new THREE.Mesh( geometry, material );
 
 mesh.receiveShadow = true;
 mesh.castShadow = true;
-
 scene.add(mesh);
+
+}
+
+function BufferGeometryTriangularPyramid(side, x, y, z) {
+  ///const loader = new STLLoader();
+  let half = side / 2;
+  var geometry1 = new THREE.BufferGeometry();
+  const vertices1 = new Float32Array( [
+      0, 0, side,
+      side, 0,  0,
+      -half,  -Math.sqrt(side*side-(half)*(half)),  0,
+  
+      0, 0, side,
+      side, 0,  0,
+      -half,  Math.sqrt(side*side-half*half),  0,
+  
+      0, 0, side,
+      -half,  -Math.sqrt(side*side-half*half),  0,
+      -half,  Math.sqrt(side*side-half*half),  0,
+  
+      side, 0,  0,
+      -side/2,  -Math.sqrt(side*side-half*half),  0,
+      -side/2,  Math.sqrt(side*side-half*half),  0
+  ] );
+  geometry1.setAttribute('position', new THREE.Float32BufferAttribute(vertices1, 3));
+  geometry1.computeVertexNormals();
+  const material1 = new THREE.MeshPhongMaterial({ color: 'Gray', side:THREE.DoubleSide});
+  const pyramid = new THREE.Mesh(geometry1, material1);
+  pyramid.castShadow=true;
+  pyramid.position.x= x;
+  pyramid.position.y= y;
+  pyramid.position.z= z;
+  scene.add(pyramid);
+
 }
 
 function changeLight() {
@@ -158,8 +193,6 @@ function buildCube(x, y, z, width, height, depth) {
   line.position.set(x,y,z);
 
   scene.add( line );
-  
-
   return cube
 }
 
