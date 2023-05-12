@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="awsm.css" />
+    <title>Server Kuznetsova</title>
+  </head>
+  <body>
+    <h1>Список путей и их функционал</h1>
+    <ul>
+      <li>
+        "/" - коренной путь, работающий как GET-запрос, в данный момент вы
+        находитесь здесь
+      </li>
+      <li>"/v1" - GET-запрос с приветствием на сервере</li>
+      <li>
+        "/v1/stats" - Get-запрос, который возвращает html таблицу с полями:
+        user-agent(информация о пользователе) и количество запросов
+      </li>
+      <li>
+        "/v1/comments" - POST-запрос, который возвращает клиенту сообщение
+        'Спасибо, за вашу отзывчивость!', если запрос сработал корректно.
+      </li>
+      <li>
+        "/v1/comments" - GET-запрос, который возвращает клиенту сообщения,
+        которые было отправлено с помощь POST-запроса.
+      </li>
+    </ul>
+  </body>
+</html>
