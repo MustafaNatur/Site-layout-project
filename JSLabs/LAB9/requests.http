@@ -1,0 +1,71 @@
+###
+GET /v3/models HTTP/1.1
+Host: 127.0.0.1:3000
+
+###
+GET /v3/models/64648adaf5294c788ca2369f HTTP/1.1
+Host: 127.0.0.1:3000
+
+###
+GET /v3/models/64648adaf5294c788ca2369f HTTP/1.1
+Host: 127.0.0.1:3000
+
+###
+POST /v3/models/ HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+
+{
+  "username": "Some",
+  "name": "Square",
+  "modelType": "blend",
+  "modelObj": {},
+  "desc": "some model",
+  "comments": ["Nice model", "Awesome Polygones"]
+}
+###
+POST /v3/models?login=Mustafa&password=1111 HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+
+{
+  "username": "Some",
+  "name": "Square",
+  "modelType": "blend",
+  "modelObj": {},
+  "desc": "some model",
+  "comments": ["Nice model", "Awesome Polygones"]
+}
+
+###
+PUT /v3/models/6464a117b525643ea451bc73?login=Mustafa&password=secret HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+
+{
+  "username": "Mustafa",
+  "name": "Cube",
+  "modelType": "m3d",
+  "modelObj": {},
+  "desc": "some model",
+  "comments": ["bad square", "Awesome Polygones"]
+}
+
+###
+PUT /v3/models/6464a117b525643ea451bc73?login=Mustafa&password=secret HTTP/1.1
+Host: 127.0.0.1:3000
+Content-Type: application/json
+
+{
+  "username": "Mustafa",
+  "name": "TestModel",
+  "modelType": "m3d",
+  "modelObj": {},
+  "desc": "some model",
+  "comments": ["Nice model", "Awesome Polygones", "It's so big"]
+}
+
+
+###
+DELETE /v3/models/64652ba42d4f93d28dc46377?login=Mustafa&password=secret
+Host: 127.0.0.1:3000
