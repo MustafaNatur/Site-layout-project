@@ -5,6 +5,8 @@ const model = require('./model/model');
 const v3_router = require('./routers/router3');
 const HOST = model.HOST
 const PORT = model.PORT;
+const bp = require('body-parser')
+
 
 const app = express();
 
@@ -13,6 +15,9 @@ app.use(express.static('public'));
 app.use(morgan('dev'))
 
 app.use(helmet())
+
+app.use(bp.json())
+app.use(bp.urlencoded({ extended: true }))
 
 app.use('/v3', v3_router)
 

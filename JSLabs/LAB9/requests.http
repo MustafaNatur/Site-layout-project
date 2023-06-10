@@ -1,22 +1,22 @@
 ###
 GET /v3/models HTTP/1.1
-Host: 127.0.0.1:3000
+Host: 127.0.0.1:3006
+
+###
+GET /v3/models/6471c1135def4ba2b8564eaa HTTP/1.1
+Host: 127.0.0.1:3006
 
 ###
 GET /v3/models/64648adaf5294c788ca2369f HTTP/1.1
-Host: 127.0.0.1:3000
-
-###
-GET /v3/models/64648adaf5294c788ca2369f HTTP/1.1
-Host: 127.0.0.1:3000
+Host: 127.0.0.1:3006
 
 ###
 POST /v3/models/ HTTP/1.1
-Host: 127.0.0.1:3000
+Host: 127.0.0.1:5000
 Content-Type: application/json
 
 {
-  "username": "Some",
+  "username": "Some9",
   "name": "Square",
   "modelType": "blend",
   "modelObj": {},
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 ###
 POST /v3/models?login=Mustafa&password=1111 HTTP/1.1
-Host: 127.0.0.1:3000
+Host: 127.0.0.1:5000
 Content-Type: application/json
 
 {
-  "username": "Some",
+  "username": "Some9",
   "name": "Square",
   "modelType": "blend",
   "modelObj": {},
@@ -38,8 +38,17 @@ Content-Type: application/json
 }
 
 ###
-PUT /v3/models/6464a117b525643ea451bc73?login=Mustafa&password=secret HTTP/1.1
-Host: 127.0.0.1:3000
+POST /v3/models/newUser?newUserFlag=true HTTP/1.1
+Host: 127.0.0.1:5000
+Content-Type: application/json
+
+{
+  "username": "Adam"
+}
+
+###
+PUT /v3/models/6471c1195def4ba2b8564eab?login=Mustafa&password=1111 HTTP/1.1
+Host: 127.0.0.1:3006
 Content-Type: application/json
 
 {
@@ -52,8 +61,8 @@ Content-Type: application/json
 }
 
 ###
-PUT /v3/models/6464a117b525643ea451bc73?login=Mustafa&password=secret HTTP/1.1
-Host: 127.0.0.1:3000
+PUT /v3/models/6471c11a5def4ba2b8564eac?login=Mustafa&password=1111 HTTP/1.1
+Host: 127.0.0.1:3006
 Content-Type: application/json
 
 {
@@ -67,5 +76,5 @@ Content-Type: application/json
 
 
 ###
-DELETE /v3/models/64652ba42d4f93d28dc46377?login=Mustafa&password=secret
-Host: 127.0.0.1:3000
+DELETE /v3/models/6471c11a5def4ba2b8564eac?login=Mustafa&password=1111
+Host: 127.0.0.1:3006

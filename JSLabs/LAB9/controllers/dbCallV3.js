@@ -1,3 +1,5 @@
+const { generateApiKey } = require('generate-api-key');
+
 const {
     getAllData,
     getDataById,
@@ -6,7 +8,8 @@ const {
     deleteData,
 } = require('../services/services.js');
 
-const { ObjectId } = require('mongodb');
+
+const { ObjectId, CURSOR_FLAGS } = require('mongodb');
 
 let dbName = "TEST"
 let collection = "models"
@@ -35,15 +38,20 @@ async function getModlesById(req, res, next) {
 async function checkApiKey(req, res, next) {
     try {
         let params = req.query;
+        let flag = params['newUserFlag']
+        console.log(flag)
         let login = params['login'];
-        console.log(req.headers)
+        //console.log(req.headers)
+        console.log('aa')
+
         let API_key = req.headers['API-key'];
-        //console.log(res.headers)
         if (API_key === undefined) {
             let result = await getDataById(dbName, 'keys', { 'username': login });
             if (result !== undefined && result !== null) {
                 console.log("result")
                 req.headers['API-key'] = result['key'];
+                next();
+            } else if (flag == 'true') {
                 next();
             }
             else {
@@ -56,15 +64,29 @@ async function checkApiKey(req, res, next) {
     }
 };
 
+async function getNewAPI(req, res, next) {
+    try {
+        //let name = req.body.username
+        console.log(req.body.username)
+        let result = await insertData(dbName, 'keys', { "username": req.body.username, "key": generateApiKey() });
+        console.log(generateApiKey())
+        res.sendStatus(200);
+    } catch (error) {
+        next(error)
+    }
+}
+
 async function addModel(req, res, next) {
     try {
         let data = req.body;
+        console.log(data)
         let result = await insertData(dbName, collection, data);
-        res.sendStatus(result);
+        res.sendStatus(200);
     } catch (error) {
         next(error)
     }
 };
+
 
 async function updateModel(req, res, next) {
     try {
@@ -101,5 +123,6 @@ module.exports = {
     addModel,
     updateModel,
     deleteModel,
-    errorCatcher
+    errorCatcher,
+    getNewAPI
 };

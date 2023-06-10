@@ -1,16 +1,6 @@
 const { mongoClient } = require("../configs/dbAccess.js");
 const { ObjectId } = require('mongodb');
 
-// const dbName = 'TEST'
-// const collectionName = 'comments'
-
-// async function connectToDB(name) {
-//     let connection = await mongoClient.connect();
-//     let dbObj = connection.db(name);
-//     console.log("Success")
-//     return dbObj
-// }
-
 
 // get all data from collection with projection
 const getAllData = async (dbName, collectionName, projection = {}) => {

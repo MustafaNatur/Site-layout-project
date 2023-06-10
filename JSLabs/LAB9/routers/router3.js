@@ -1,5 +1,7 @@
 const express = require('express');
 const v3_router = express.Router();
+const bp = require('body-parser')
+
 
 const {
     getModles,
@@ -8,15 +10,21 @@ const {
     checkApiKey,
     addModel,
     updateModel,
+    getNewAPI
 } = require('../controllers/dbCallV3.js')
 
 v3_router
     .get('/models', getModles)
     .get('/models/:id', getModlesById)
-    .use(express.json(), checkApiKey)
+    .post('/models/newUser', getNewAPI)
     .post('/models', addModel)
     .put('/models/:id', updateModel)
-    .delete('/models/:id', deleteModel);
+    .delete('/models/:id', deleteModel)
+    .use(express.json(), checkApiKey)
+    .use(bp.json())
+    .use(bp.urlencoded({ extended: true }))
+
+
 
 module.exports = v3_router;
 
