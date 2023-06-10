@@ -19,6 +19,8 @@
     "generate-api-key": "^1.0.2",
     "helmet": "^7.0.0",
     "mongodb": "^5.5.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.6.3",
+    "yamljs": "^0.3.0"
   }
 }
