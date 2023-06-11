@@ -3,6 +3,7 @@ const helmet = require('helmet')
 const morgan = require('morgan')
 const model = require('./model/model');
 const v3_router = require('./routers/router3');
+const v4_router = require('./routers/router4');
 const HOST = model.HOST
 const PORT = model.PORT;
 const bp = require('body-parser')
@@ -25,9 +26,12 @@ app.use(morgan('dev'))
 app.use(helmet())
 
 app.use(bp.json())
+
 app.use(bp.urlencoded({ extended: true }))
 
 app.use('/v3', v3_router)
+
+app.use('/v4', v4_router)
 
 app.use((req, res) => {
     res.status(404).send('Данная страница не найдена!');

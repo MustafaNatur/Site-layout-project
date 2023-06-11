@@ -38,26 +38,35 @@ async function getModlesById(req, res, next) {
 async function checkApiKey(req, res, next) {
     try {
         let params = req.query;
-        let flag = params['newUserFlag']
-        console.log(flag)
-        let login = params['login'];
-        //console.log(req.headers)
-        console.log('aa')
 
-        let API_key = req.headers['API-key'];
-        if (API_key === undefined) {
-            let result = await getDataById(dbName, 'keys', { 'username': login });
+        let apiKey = params['key']
+        console.log(apiKey)
+        if (apiKey != undefined) {
+            console.log(apiKey)
+
+            let result = await getDataById(dbName, 'keys', { 'key': apiKey });
             if (result !== undefined && result !== null) {
-                console.log("result")
-                req.headers['API-key'] = result['key'];
+                console.log('SUCCESS')
                 next();
-            } else if (flag == 'true') {
-                next();
-            }
-            else {
+            } else {
                 res.status(401).send('Forbidden!');
-            };
+            }
+        } else {
+            res.status(401).send('Forbidden!');
         }
+
+        // let API_key = req.headers['API-key'];
+        // if (API_key === undefined) {
+        //     let result = await getDataById(dbName, 'keys', { 'username': login });
+        //     if (result !== undefined && result !== null) {
+        //         console.log(result)
+        //         req.headers['API-key'] = result['key'];
+        //         next();
+        //     }
+        //     else {
+        //         res.status(401).send('Forbidden!');
+        //     };
+        // }
     } catch (error) {
         let err = new Error();
         next(err)

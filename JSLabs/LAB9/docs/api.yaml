@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   title: This is documntation for my API
-  description: SAPR epress labs documentaion by Natur Mustafa 211-325
+  description: SAPR express labs documentaion by Natur Mustafa 211-325
   version: 1.0
   servers:
     -url: "http://localhost:5005"
@@ -53,3 +53,67 @@ paths:
                 "creationDate": "#####",
                 "lastChangesDate": "#####",
               }
+
+  /v3/postModels:
+    post:
+      summary: Adds a new model
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: query
+          name: login
+          type: string
+          enum: ["Mustafa"]
+          required: true
+
+        - in: query
+          name: password
+          type: string
+          enum: ["1111"]
+          required: true
+
+        - in: body
+          name: body
+          schema:
+            properties:
+              username:
+                type: string
+              name:
+                type: string
+              modelType:
+                type: string
+              modelObj:
+                type: object
+              desc:
+                type: string
+              comments:
+                type: [string]
+      responses:
+        "200":
+          description: OK
+
+  /v3/newUser:
+    post:
+      summary: Adds a new user
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: query
+          name: newUserFlag
+          type: string
+          enum: ["true", "false"]
+          required: true
+
+        - in: body
+          name: body
+          schema:
+            properties:
+              username:
+                type: string
+      responses:
+        "200":
+          description: OK
