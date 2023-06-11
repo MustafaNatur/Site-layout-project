@@ -62,8 +62,24 @@ const updateData = async (dbName, collectionName, filter, objectData) => {
     let changes = { "$set": objectData }
     console.log(changes);
     let result = await dbObj.updateOne(filter, changes);
-    return await asyncFindAllData(collectionName);
+
 }
+
+// const asyncUpdateData = async (query, objectData, collectionName) => {
+//     console.log(query);
+//     console.log(objectData);
+//     let connection = await mongoClient.connect();
+//     let dbObj = connection.db('MyWorkDB').collection(collectionName);
+//     if (collectionName === 'models') {
+//         let date = new Date().toISOString();
+//         objectData['lastChangesDate'] = date;
+//     }
+//     let changes = { "$set": objectData }
+//     console.log(changes);
+//     let result = await dbObj.updateOne(query, changes);
+//     return await asyncFindAllData(collectionName);
+
+// }
 
 const deleteData = async (dbName, collectionName, idValue) => {
     let connection = await mongoClient.connect();

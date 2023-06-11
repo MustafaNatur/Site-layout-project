@@ -105,3 +105,66 @@ paths:
       responses:
         "200":
           description: OK
+
+  /v3/putModels/{ID}:
+    put:
+      summary: updates a model by ID
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: query
+          name: key
+          type: string
+          enum: ["083m.7h.X_QidLLnH~6~giz"]
+          required: true
+
+        - name: ID
+          in: path
+          type: string
+          enum: ["6471c56313e1acbca3c26158", "6471c5767e8b2f72e8b39e6a"]
+          required: true
+
+        - in: body
+          name: body
+          schema:
+            properties:
+              username:
+                type: string
+              name:
+                type: string
+              modelType:
+                type: string
+              modelObj:
+                type: object
+              desc:
+                type: string
+              comments:
+                type: [string]
+      responses:
+        "200":
+          description: OK
+
+  /v3/deleteModels/{ID}:
+    delete:
+      summary: delets a model by ID
+      produces:
+        - application/json
+      consumes:
+        - application/json
+      parameters:
+        - in: query
+          name: key
+          type: string
+          enum: ["083m.7h.X_QidLLnH~6~giz"]
+          required: true
+
+        - name: ID
+          in: path
+          type: string
+          enum: ["6471c62bfc19c42d331c308c", "6471c6b91212c571c7bd4411"]
+          required: true
+      responses:
+        "200":
+          description: OK

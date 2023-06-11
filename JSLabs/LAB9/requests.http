@@ -61,8 +61,8 @@ Content-Type: application/json
 }
 
 ###
-PUT /v3/models/6471c11a5def4ba2b8564eac?login=Mustafa&password=1111 HTTP/1.1
-Host: 127.0.0.1:3006
+PUT /v3/putModels/6471c56313e1acbca3c26158?key=083m.7h.X_QidLLnH~6~giz HTTP/1.1
+Host: 127.0.0.1:5005
 Content-Type: application/json
 
 {
@@ -76,5 +76,5 @@ Content-Type: application/json
 
 
 ###
-DELETE /v3/models/6471c11a5def4ba2b8564eac?login=Mstafa
+DELETE /v3/models/6471c11a5def4ba2b8564eac?key=083m.7h.X_QidLLnH~6~giz
 Host: 127.0.0.1:5005

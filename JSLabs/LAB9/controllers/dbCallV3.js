@@ -102,7 +102,7 @@ async function updateModel(req, res, next) {
     try {
         let data = req.body;
         let filter = { "_id": new ObjectId(req.params['id']) };
-        let update = await updateData(dbName, collection, filter, data);
+        // let update = await updateData(dbName, collection, filter, data);
         let result = await getAllData(dbName, collection);
         res.send(result);
     } catch (error) {

@@ -13,8 +13,8 @@ const {
 v3_router
     .use(express.json(), checkApiKey)
     .post('/postModels', addModel)
-    .put('/models/:id', updateModel)
-    .delete('/models/:id', deleteModel)
+    .put('/putModels/:id', updateModel)
+    .delete('/deleteModels/:id', deleteModel)
     .use(bp.json())
     .use(bp.urlencoded({ extended: true }))
 
