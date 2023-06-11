@@ -24,7 +24,7 @@ Content-Type: application/json
   "comments": ["Nice model", "Awesome Polygones"]
 }
 ###
-POST /v3/models?key=BIdAWH7i9n7YeC/kfM5MQ HTTP/1.1
+POST /v3/postModels?key=BIdAWH7i9n7YeC/kfM5MQ HTTP/1.1
 Host: 127.0.0.1:5005
 Content-Type: application/json
 

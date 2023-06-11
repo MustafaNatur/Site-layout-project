@@ -9,7 +9,7 @@ info:
 
 paths:
   #Returns a Models list
-  /v3/models:
+  /v4/models:
     get:
       summary: Returns a list of models.
       description: Models witch are already registered
@@ -25,7 +25,7 @@ paths:
                 type: string
 
   #Get Request with path id
-  /v3/models/{ID}:
+  /v4/models/{ID}:
     get:
       summary: Returns a model by ID.
       description: Returns the Specific model
@@ -63,15 +63,9 @@ paths:
         - application/json
       parameters:
         - in: query
-          name: login
+          name: key
           type: string
-          enum: ["Mustafa"]
-          required: true
-
-        - in: query
-          name: password
-          type: string
-          enum: ["1111"]
+          enum: ["BIdAWH7i9n7YeC/kfM5MQ", "6485ecb24255765820b1fade"]
           required: true
 
         - in: body
@@ -94,7 +88,7 @@ paths:
         "200":
           description: OK
 
-  /v3/newUser:
+  /v4/newUser:
     post:
       summary: Adds a new user
       produces:
@@ -102,12 +96,6 @@ paths:
       consumes:
         - application/json
       parameters:
-        - in: query
-          name: newUserFlag
-          type: string
-          enum: ["true", "false"]
-          required: true
-
         - in: body
           name: body
           schema:

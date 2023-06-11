@@ -76,7 +76,10 @@ async function checkApiKey(req, res, next) {
 async function getNewAPI(req, res, next) {
     try {
         console.log(req.body.username)
-        let result = await insertData(dbName, 'keys', { "username": req.body.username, "key": generateApiKey() });
+        let name = req.body.username
+        let key = generateApiKey()
+        let result = await insertData(dbName, 'keys', { "username": name, "key": key });
+        res.send(key)
         res.sendStatus(200);
     } catch (error) {
         next(error)

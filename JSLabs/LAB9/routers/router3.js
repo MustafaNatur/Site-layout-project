@@ -4,8 +4,6 @@ const bp = require('body-parser')
 
 
 const {
-    getModles,
-    getModlesById,
     deleteModel,
     checkApiKey,
     addModel,
@@ -14,9 +12,7 @@ const {
 
 v3_router
     .use(express.json(), checkApiKey)
-    .get('/models', getModles)
-    .get('/models/:id', getModlesById)
-    .post('/models', addModel)
+    .post('/postModels', addModel)
     .put('/models/:id', updateModel)
     .delete('/models/:id', deleteModel)
     .use(bp.json())
