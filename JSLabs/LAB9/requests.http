@@ -29,13 +29,18 @@ Host: 127.0.0.1:5005
 Content-Type: application/json
 
 {
-  "username": "Some9",
-  "name": "Square",
+  "username": "Mustafa",
+  "name": "Cube",
   "modelType": "blend",
   "modelObj": {},
   "desc": "some model",
   "comments": ["Nice model", "Awesome Polygones"]
 }
+
+# Sphere
+# Cone
+# Pyramid
+# Cube
 
 ###
 POST /v4/newUser HTTP/1.1
@@ -76,5 +81,5 @@ Content-Type: application/json
 
 
 ###
-DELETE /v3/models/6471c11a5def4ba2b8564eac?key=083m.7h.X_QidLLnH~6~giz
+DELETE /v3/deleteModels/6471c5767e8b2f72e8b39e6a?key=083m.7h.X_QidLLnH~6~giz
 Host: 127.0.0.1:5005

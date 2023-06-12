@@ -861,3 +861,7 @@ noscript {
 ::selection {
   background: rgba(0, 100, 193, 0.25);
 }
+
+.table-data {
+  overflow: scroll;
+}

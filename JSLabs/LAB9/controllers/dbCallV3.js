@@ -19,7 +19,6 @@ async function getModles(req, res, next) {
         let modelsList = await getAllData(dbName, collection, { projection: { name: 1 } });
         res.send(modelsList);
     } catch (error) {
-        let err = new Error();
         next(error)
     }
 };
@@ -30,8 +29,7 @@ async function getModlesById(req, res, next) {
         let model = await getDataById(dbName, collection, { "_id": new ObjectId(idValue) });
         res.send(model);
     } catch (error) {
-        let err = new Error();
-        next(err)
+        next(error)
     }
 };
 
@@ -68,8 +66,7 @@ async function checkApiKey(req, res, next) {
         //     };
         // }
     } catch (error) {
-        let err = new Error();
-        next(err)
+        next(error)
     }
 };
 
@@ -106,8 +103,7 @@ async function updateModel(req, res, next) {
         let result = await getAllData(dbName, collection);
         res.send(result);
     } catch (error) {
-        let err = new Error();
-        next(err)
+        next(error)
     }
 }
 
@@ -117,8 +113,7 @@ async function deleteModel(req, res, next) {
         let result = await deleteData(dbName, collection, idValue);
         res.send(result);
     } catch (error) {
-        let err = new Error();
-        next(err)
+        next(error)
     }
 }
 
