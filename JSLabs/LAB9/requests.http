@@ -7,7 +7,7 @@ GET /v3/models/6471c1135def4ba2b8564eaa HTTP/1.1
 Host: 127.0.0.1:3006
 
 ###
-GET /v3/models/64648adaf5294c788ca2369f HTTP/1.1
+GET /v4/models/64648adaf5294c788ca2369f HTTP/1.1
 Host: 127.0.0.1:5005
 
 ###
