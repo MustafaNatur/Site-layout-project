@@ -17,8 +17,15 @@
     <p>(An example table + detail view)</p>
 
     <div class="buttonBlock">
-      <input type="text" class="input" placeholder="Key" id="input" />
-      <a id="update" class="update" href="#">Update</a>
+      <input
+        type="text"
+        class="input"
+        placeholder="Key"
+        id="input"
+        placeholder="Api key"
+      />
+      <a id="update" class="funcButtons" href="#">Update</a>
+      <a id="create" class="funcButtons" href="#">Add +</a>
     </div>
 
     <main>
@@ -50,36 +57,88 @@
         <div class="detail-container">
           <dl>
             <dt>User name</dt>
-            <dd id="userName">John Doe</dd>
+            <dd id="userName" class="ddClass">John Doe</dd>
+            <input
+              type="text"
+              class="inputField"
+              id="inputFieldUserName"
+              placeholder="John Doe"
+            />
             <dt>Model name</dt>
-            <dd id="modelName">email@example.com</dd>
+            <dd id="modelName" class="ddClass">email@example.com</dd>
+            <input
+              type="text"
+              class="inputField"
+              placeholder="email@example.com"
+              id="inputFieldModelName"
+            />
             <dt>Model type</dt>
-            <dd id="modelType">Detroit</dd>
+            <dd id="modelType" class="ddClass">Detroit</dd>
+            <input
+              type="text"
+              class="inputField"
+              placeholder="Detroit"
+              id="inputFieldModelType"
+            />
             <dt>Creation date</dt>
-            <dd id="creationDate">555-555-5555</dd>
+            <dd id="creationDate" class="ddClass">555-555-5555</dd>
+            <input
+              type="text"
+              class="inputField"
+              placeholder="555-555-5555"
+              id="inputFieldCreationDate"
+            />
             <dt>Description</dt>
-            <dd id="description">
+            <dd id="description" class="ddClass">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
               turpis. Suspendisse urna nibh, viverra non, semper suscipit,
               posuere a, pede.
             </dd>
+            <input
+              type="text"
+              class="inputField"
+              placeholder="Lorem ipsum..."
+              id="inputFieldDescription"
+            />
             <dt>Comments</dt>
-            <dd id="comments">
+            <dd id="comments" class="ddClass">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
               turpis. Suspendisse urna nibh, viverra non, semper suscipit,
               posuere a, pede.
             </dd>
+            <input type="text" class="inputField" placeholder="Nice model" />
           </dl>
+          <button class="send" id="send">Send</button>
         </div>
         <div class="detail-nav">
           <button class="close">Close</button>
+        </div>
+
+        <div class="canva">
+          <div class="flex">
+            <button class="updateModel" id="updateModel">Update</button>
+            <select id="model-select">
+              <option value="sphere">Sphere</option>
+              <option value="cone">Cone</option>
+              <option value="pyramid">Pyramid</option>
+              <option value="cube">Cube</option>
+            </select>
+            <br />
+            <input type="color" id="color-picker" value="#ff0000" />
+            <br />
+          </div>
+          <div class="canvas"></div>
+          <div id="canvas-container"></div>
+
+          <h1>3D Viewer</h1>
         </div>
       </div>
     </main>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/viewer.js"></script>
   </body>
 </html>

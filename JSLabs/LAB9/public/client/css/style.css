@@ -34,7 +34,7 @@ p {
   height: 28px;
 }
 
-.update {
+.funcButtons {
   line-height: 2;
   display: inline-block;
   font-size: 1.5rem;
@@ -134,10 +134,14 @@ tfoot th {
 }
 
 .detail {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
   background-color: #bd2a4e;
   width: 100%;
   height: 100%;
-  padding: 40px 0;
+  padding: 100px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -151,6 +155,10 @@ tfoot th {
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
+
+canvas {
+  border-radius: 20px;
+}
 .detail.open {
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -159,8 +167,7 @@ tfoot th {
 }
 
 .detail-container {
-  margin: 0 auto;
-  padding: 40px;
+  padding: 60px;
   max-width: 500px;
 }
 
@@ -182,6 +189,21 @@ dd {
   box-shadow: 0 1px 0 #c52c51;
 }
 
+.inputField {
+  margin: 0 0 40px 0;
+  font-size: 1.8rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #770c27;
+  box-shadow: 0 1px 0 white;
+  background: none;
+  border: none;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
 .close {
   background: none;
   padding: 18px;
@@ -201,6 +223,31 @@ dd {
 }
 .close:hover,
 .close:focus {
+  background-color: #a82545;
+  border: 1px solid #a82545;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+.send {
+  background: none;
+  padding: 18px;
+  color: #fff;
+  font-weight: 300;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  line-height: 1;
+  font-size: 1.8rem;
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  -webkit-transition: border 0.3s linear;
+  transition: border 0.3s linear;
+}
+.send:hover,
+.send:focus {
   background-color: #a82545;
   border: 1px solid #a82545;
 }

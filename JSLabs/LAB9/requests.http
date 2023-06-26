@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ###
 PUT /v3/models/6471c1195def4ba2b8564eab?login=Mustfa&password=1111 HTTP/1.1
-Host: 127.0.0.1:3006
+Host: 127.0.0.1:5005
 Content-Type: application/json
 
 {
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 
 ###
-PUT /v3/putModels/6471c56313e1acbca3c26158?key=083m.7h.X_QidLLnH~6~giz HTTP/1.1
+PUT /v3/putModels/64995293c76a31c6598a95af?key=1111 HTTP/1.1
 Host: 127.0.0.1:5005
 Content-Type: application/json
 
